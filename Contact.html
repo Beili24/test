@@ -1,0 +1,67 @@
+<!--
+Name:Beili Zhang
+File name: Contact.html
+The date created: 2024/10/20
+Description: This is the last page of Assignment1.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Beili Zhang">
+    <meta name="description" content="this is the contact page including a form.">
+    <meta name="keyword" content="Contact, first name, last name, email, message">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Beili Zhang / Computer Programming Student</h1>
+        <nav>
+            <ul>
+                <li><a class="headingLink" href="Index.html">Home</a></li>
+                <li><a class="headingLink" href="Resume.html">Resume</a></li>
+                <li><a class="headingLink" href="Projects.html">Projects</a></li>
+                <li><a class="headingLink" href="Contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--form for contact-->
+    <main class="contact">
+        <h2 id="contact_h2">Contact Me</h2>
+        <form action="submit_contact_form.php" method="POST">
+
+            <label class="formlable" for="firstName">First Name *</label>
+            <input class="form_input" type="text" id="firstName" name="first_name" required>
+            
+            <label class="formlable" for="lastName">Last Name *</label>
+            <input class="form_input" type="text" id="lastName" name="last_name" required>
+
+            <label class="formlable" for="email">Email *</label>
+            <input  class="form_input" type="email" id="email" name="email" required>
+
+            <label class="formlable" for="subject">Subject *</label>
+            <input class="form_input" type="text" id="subject" name="subject"  minlength="5" maxlength="100">
+
+            <label class="formlable" for="message">Message *</label>
+            <textarea id="message" name="message"  minlength="20" maxlength="500"></textarea>
+
+            <button id="formbutton" type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="footer_paragraph">&copy; 2024 by Beili Zhang.</p>
+        <ul id="footer-info">
+            <li class="footer_list">Call: 123-456-7890</li>
+            <li class="footer_list" id="footer_email">Email: zhan0899@algonquinlive.com</li>
+            <li class="footer_list"><a id="footer_a" href="https://www.linkedin.com/in/beili-zhang-9179a0191/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
